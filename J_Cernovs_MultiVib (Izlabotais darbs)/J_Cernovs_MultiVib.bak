@@ -1,0 +1,220 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:AMP_lib
+LIBS:J_Cernovs_MultiVib-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Multivibrator"
+Date "2018-03-15"
+Rev "1.0"
+Comp ""
+Comment1 "Top Level"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Battery BT1
+U 1 1 5AA5C8F2
+P 4600 3800
+F 0 "BT1" H 4700 3900 50  0000 L CNN
+F 1 "9V" H 4700 3800 50  0000 L CNN
+F 2 "" V 4600 3860 50  0001 C CNN
+F 3 "" V 4600 3860 50  0001 C CNN
+	1    4600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1.1
+U 1 1 5AA5C8F8
+P 5100 3200
+F 0 "D1.1" H 5100 3300 50  0000 C CNN
+F 1 "LED" H 5100 3100 50  0000 C CNN
+F 2 "" H 5100 3200 50  0001 C CNN
+F 3 "" H 5100 3200 50  0001 C CNN
+	1    5100 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 5AA5C8FE
+P 7200 3200
+F 0 "D2" H 7200 3300 50  0000 C CNN
+F 1 "LED" H 7200 3100 50  0000 C CNN
+F 2 "" H 7200 3200 50  0001 C CNN
+F 3 "" H 7200 3200 50  0001 C CNN
+	1    7200 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5AA5C904
+P 5100 3600
+F 0 "R1" V 5180 3600 50  0000 C CNN
+F 1 "470R" V 5100 3600 50  0000 C CNN
+F 2 "" V 5030 3600 50  0001 C CNN
+F 3 "" H 5100 3600 50  0001 C CNN
+	1    5100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5AA5C90A
+P 5600 3600
+F 0 "R2" V 5680 3600 50  0000 C CNN
+F 1 "47k" V 5600 3600 50  0000 C CNN
+F 2 "" V 5530 3600 50  0001 C CNN
+F 3 "" H 5600 3600 50  0001 C CNN
+	1    5600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5AA5C910
+P 6700 3600
+F 0 "R3" V 6800 3600 50  0000 C CNN
+F 1 "47k" V 6700 3600 50  0000 C CNN
+F 2 "" V 6630 3600 50  0001 C CNN
+F 3 "" H 6700 3600 50  0001 C CNN
+	1    6700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5AA5C916
+P 7200 3600
+F 0 "R4" V 7280 3600 50  0000 C CNN
+F 1 "470R" V 7200 3600 50  0000 C CNN
+F 2 "" V 7130 3600 50  0001 C CNN
+F 3 "" H 7200 3600 50  0001 C CNN
+	1    7200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 CP1
+U 1 1 5AA5C91C
+P 5350 3900
+F 0 "CP1" H 5375 4000 50  0000 L CNN
+F 1 "47uF" H 5375 3800 50  0000 L CNN
+F 2 "" H 5350 3900 50  0001 C CNN
+F 3 "" H 5350 3900 50  0001 C CNN
+	1    5350 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP1 CP2
+U 1 1 5AA5C922
+P 6950 3900
+F 0 "CP2" H 6700 4000 50  0000 L CNN
+F 1 "47uF" H 6700 3800 50  0000 L CNN
+F 2 "" H 6950 3900 50  0001 C CNN
+F 3 "" H 6950 3900 50  0001 C CNN
+	1    6950 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L BC846PN U1
+U 1 1 5AA5CF93
+P 6150 4300
+F 0 "U1" H 6000 4550 60  0000 C CNN
+F 1 "BC846PN" H 6150 4050 60  0000 C CNN
+F 2 "" V 6250 4350 60  0001 C CNN
+F 3 "" V 6250 4350 60  0001 C CNN
+	1    6150 4300
+	-1   0    0    -1  
+$EndComp
+Text Notes 5450 3350 0    79   ~ 16
+«MultiVib» projekts\n\n\n\n
+Wire Wire Line
+	5600 3000 5600 3450
+Wire Wire Line
+	5100 3750 5100 4150
+Wire Wire Line
+	5100 3900 5200 3900
+Wire Wire Line
+	5500 3900 5600 3900
+Wire Wire Line
+	5600 3750 5600 4300
+Wire Wire Line
+	4600 3000 7200 3000
+Wire Wire Line
+	6700 3750 6700 4300
+Wire Wire Line
+	6700 3900 6800 3900
+Wire Wire Line
+	7100 3900 7200 3900
+Wire Wire Line
+	7200 3750 7200 4450
+Wire Wire Line
+	7200 3000 7200 3050
+Connection ~ 5600 3000
+Wire Wire Line
+	6700 3450 6700 3000
+Connection ~ 6700 3000
+Wire Wire Line
+	7200 3450 7200 3350
+Wire Wire Line
+	5100 3450 5100 3350
+Wire Wire Line
+	5100 3000 5100 3050
+Connection ~ 5100 3000
+Wire Wire Line
+	7200 4450 6550 4450
+Connection ~ 7200 3900
+Wire Wire Line
+	6700 4300 6550 4300
+Connection ~ 6700 3900
+Wire Wire Line
+	5600 4300 5750 4300
+Connection ~ 5600 3900
+Wire Wire Line
+	5100 4150 5750 4150
+Connection ~ 5100 3900
+Wire Wire Line
+	4600 4600 6600 4600
+Wire Wire Line
+	5750 4600 5750 4450
+Connection ~ 5750 4600
+Wire Wire Line
+	6600 4600 6600 4150
+Wire Wire Line
+	6600 4150 6550 4150
+Wire Wire Line
+	4600 3600 4600 3000
+Wire Wire Line
+	4600 4000 4600 4600
+$EndSCHEMATC
